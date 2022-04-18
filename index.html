@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./d3.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>マイアプリ</title>
+</head>
+
+<body>
+    <div id="open">
+        <div>
+            <p>GuhnGi</p>
+        </div>
+        <div id="btn0">
+
+            <select name="filename" id="fileName">
+            <option value=""></option>
+        </select>
+            <button id="button0" type="submit">continue</button>
+        </div>
+        <div id="btn99">
+            <input type="text" value="newfilename" id="newfileName">
+            <button id="button99" type="submit">New Game</button>
+        </div>
+        <div id="btn100">
+            <button id="button100" type="submit">Exit</button>
+        </div>
+    </div>
+    <div id="container">
+        <header>
+            <li>棋譜</li>
+            <li>リセット</li>
+            <li>終了</li>
+        </header>
+
+        <div id="main">
+            <aside id="left-aside">
+                <div id="bTurn">○</div>
+                <div id="wTurn">●</div>
+            </aside>
+
+            <p id="text"></p>
+            <div id="bord"></div>
+
+            <aside id="right-aside">
+                <div id="btn1"><button type="submit" id="button1">上</button></div>
+                <div id="btn2"><button type="submit" id="button2">中</button></div>
+                <div id="btn3"><button type="submit" id="button3">下</button></div>
+                <div id="btn4"><button type="submit" id="button4">全</button></div>
+                <div id="hand-pieces"></div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

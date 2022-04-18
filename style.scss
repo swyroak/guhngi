@@ -1,0 +1,103 @@
+    #open {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: inline-block;
+        transition-property: opacity;
+        transition-duration: 1s;
+        transition-delay: 0s;
+        opacity: 1;
+        div {
+            display: flex;
+            justify-content: center;
+            margin: 5%;
+        }
+    }
+    
+    body {
+        #container {
+            transition-property: opacity;
+            transition-duration: 2s;
+            transition-delay: 0s;
+            opacity: 0;
+            header {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    display: block;
+                }
+            }
+            #main {
+                display: flex;
+                justify-content: center;
+                table {
+                    border-spacing: 0px;
+                    tr {
+                        td {
+                            height: 5em;
+                            width: 5em;
+                            border: 1px solid #333;
+                            text-align: center;
+                        }
+                    }
+                }
+                aside {
+                    margin: 1em;
+                    height: 25em;
+                    width: 5em;
+                }
+                #right-aside {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(20, 1fr);
+                    button {
+                        background-color: gray;
+                        width: 90%;
+                        height: 90%;
+                        border: none;
+                    }
+                    button:hover {
+                        opacity: 100%;
+                    }
+                    #btn1 {
+                        grid-column-start: 1;
+                        grid-column-end: 1;
+                        grid-row-start: 1;
+                        grid-row-end: 3;
+                        opacity: 50%;
+                    }
+                    #btn2 {
+                        grid-column-start: 1;
+                        grid-column-end: 3;
+                        grid-row-start: 3;
+                        grid-row-end: 5;
+                        opacity: 50%;
+                    }
+                    #btn3 {
+                        grid-column-start: 1;
+                        grid-column-end: 4;
+                        grid-row-start: 5;
+                        grid-row-end: 7;
+                        opacity: 50%;
+                    }
+                    #btn4 {
+                        grid-column-start: 1;
+                        grid-column-end: 4;
+                        grid-row-start: 7;
+                        grid-row-end: 8;
+                        opacity: 50%;
+                    }
+                    #hand-pieces {
+                        border: 1px gray solid;
+                        border-radius: 10%;
+                        grid-column-start: 1;
+                        grid-column-end: 4;
+                        grid-row-start: 15;
+                        grid-row-end: 21;
+                    }
+                }
+            }
+        }
+    }
+    
+    https: //github.com/swyroak/LifeForm
