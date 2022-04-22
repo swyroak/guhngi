@@ -169,6 +169,14 @@ borddata.attr('Hierarchie', (d) => {
     return d.Hierarchie
 })
 
+borddata.attr('file', (d) => {
+    return d.file
+})
+
+borddata.attr('rank', (d) => {
+    return d.rank
+})
+
 const pieces = document.getElementsByClassName('piece')
 
 d3.selectAll('td').style('background-color', (d, i) => {
@@ -180,6 +188,8 @@ const button1 = document.getElementById('button1')
 const button2 = document.getElementById('button2')
 const button3 = document.getElementById('button3')
 const button4 = document.getElementById('button4')
+const button99 = document.getElementById('button99')
+const button9999 = document.getElementById('button9999')
 
 async function vanish() {
     const _sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
@@ -187,6 +197,15 @@ async function vanish() {
     await _sleep(1000)
     document.getElementById('open').style.display = 'none'
     document.getElementById('container').style.opacity = 1
+}
+
+async function createNewGame() {
+    const gameName = document.getElementById('newfileName').value
+    await window.manipulateDb.createTable(gameName)
+}
+
+async function addDatas() {
+    await window.manipulateDb.addData()
 }
 
 function changeHierarchieHight() {
@@ -232,6 +251,8 @@ button1.addEventListener('click', changeHierarchieHight, false)
 button2.addEventListener('click', changeHierarchieMiddle, false)
 button3.addEventListener('click', changeHierarchieLow, false)
 button4.addEventListener('click', changeHierarchieFull, false)
+button99.addEventListener('click', createNewGame, false)
+button9999.addEventListener('click', addDatas, false)
 
 function onDragstart(e) {
     console.log('drag start')

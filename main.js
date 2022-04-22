@@ -41,6 +41,17 @@ const createWindow = () => {
         return ansmsg
     })
 
+    ipcMain.handle('add-data', async(_e, _arg) => {
+        const obj = new Object()
+        const location = path.join(__dirname, '')
+        obj.name = 'Alexius Academia'
+        obj.address = 'Paco, Botolan, Zambales'
+        db.insertTableContent('test', location, obj, (succ, msg) => {
+            console.log(succ)
+            console.log(msg)
+        })
+    })
+
     mainWindow.webContents.openDevTools('left')
 
     mainWindow.loadFile('index.html')
