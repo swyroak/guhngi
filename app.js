@@ -208,6 +208,10 @@ async function addDatas() {
     await window.manipulateDb.addData(bord)
 }
 
+async function searchDatas() {
+    await window.manipulateDb.searchData()
+}
+
 function changeHierarchieHight() {
     button1.style.opacity = '100%'
     button2.style.opacity = '30%'
