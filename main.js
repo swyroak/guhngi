@@ -46,9 +46,17 @@ const createWindow = () => {
         const location = path.join(__dirname, '')
         obj.name = 'Alexius Academia'
         obj.address = 'Paco, Botolan, Zambales'
-        db.insertTableContent('test', location, obj, (succ, msg) => {
+        db.insertTableContent('test', location, _arg, (succ, msg) => {
             console.log(succ)
             console.log(msg)
+        })
+    })
+
+    ipcMain.handle('search-data', async(_e, _arg) => {
+        const location = path.join(__dirname, '')
+        db.getRows('test', location, _arg, (succ, msg) => {
+            console.log(succ)
+            console.loglog(msg)
         })
     })
 

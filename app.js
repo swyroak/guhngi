@@ -205,7 +205,7 @@ async function createNewGame() {
 }
 
 async function addDatas() {
-    await window.manipulateDb.addData()
+    await window.manipulateDb.addData(bord)
 }
 
 function changeHierarchieHight() {
