@@ -3,146 +3,144 @@
 /* eslint-disable indent */
 /* eslint-disable no-undef */
 const bord = [
+    [
         [
-            [
-                { name: '砲', side: 'black' },
-                { name: '忍', side: 'black' },
-                { name: '馬', side: 'black' }
-            ],
-            [
-                { name: '砲', side: 'black' },
-                { name: '忍', side: 'black' },
-                { name: '馬', side: 'black' }
-            ],
-            [
-                { name: '砲', side: 'black' },
-                { name: '忍', side: 'black' },
-                { name: '馬', side: 'black' }
-            ],
-            [
-                { name: '砲', side: 'black' },
-                { name: '忍', side: 'black' },
-                { name: '馬', side: 'black' }
-            ],
-            [
-                { name: '砲', side: 'black' },
-                { name: '忍', side: 'black' },
-                { name: '馬', side: 'black' }
-            ]
+            { name: '砲', side: 'black' },
+            { name: '忍', side: 'black' },
+            { name: '馬', side: 'black' }
         ],
         [
-            [
-                { name: '砲', side: 'black', file: 1, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'black', file: 1, rank: 5, Hierarchie: 2 },
-                { name: '馬', side: 'black', file: 1, rank: 5, Hierarchie: 3 }
-            ],
-            [
-                { name: '砲', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'black', file: 2, rank: 5, Hierarchie: 2 },
-                { name: '馬', side: 'black', file: 2, rank: 5, Hierarchie: 3 }
-            ],
-            [
-                { name: '砲', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '馬', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '砲', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '馬', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '砲', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '馬', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
-            ]
+            { name: '砲', side: 'black' },
+            { name: '忍', side: 'black' },
+            { name: '馬', side: 'black' }
         ],
         [
-            [
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
-            ]
+            { name: '砲', side: 'black' },
+            { name: '忍', side: 'black' },
+            { name: '馬', side: 'black' }
         ],
         [
-            [
-                { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
-            ]
+            { name: '砲', side: 'black' },
+            { name: '忍', side: 'black' },
+            { name: '馬', side: 'black' }
         ],
         [
-            [
-                { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
-            ],
-            [
-                { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
-                { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
-            ]
+            { name: '砲', side: 'black' },
+            { name: '忍', side: 'black' },
+            { name: '馬', side: 'black' }
+        ]
+    ],
+    [
+        [
+            { name: '砲', side: 'black', file: 1, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'black', file: 1, rank: 5, Hierarchie: 2 },
+            { name: '馬', side: 'black', file: 1, rank: 5, Hierarchie: 3 }
+        ],
+        [
+            { name: '砲', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'black', file: 2, rank: 5, Hierarchie: 2 },
+            { name: '馬', side: 'black', file: 2, rank: 5, Hierarchie: 3 }
+        ],
+        [
+            { name: '砲', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '馬', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '砲', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '馬', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '砲', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '馬', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
+        ]
+    ],
+    [
+        [
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '', side: 'black', file: 2, rank: 5, Hierarchie: 1 }
+        ]
+    ],
+    [
+        [
+            { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
+        ]
+    ],
+    [
+        [
+            { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
+        ],
+        [
+            { name: '砲', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '忍', side: 'white', file: 2, rank: 5, Hierarchie: 1 },
+            { name: '馬', side: 'white', file: 2, rank: 5, Hierarchie: 1 }
         ]
     ]
-    // const bord=[1,2,3,4,5]
-console.log(bord)
+]
 
-async function continueGame() {
+async function SetGameList() {
     const files = await window.manipulateDb.getFileName()
     d3.select('#fileName').selectAll('option').data(files).enter().append('option').attr('value', (d) => {
         return d
@@ -151,31 +149,42 @@ async function continueGame() {
     })
 }
 
-continueGame()
-    // eslint-disable-next-line no-undef
-const borddata = d3.select('#bord').append('table').append('tbody').selectAll('tr').data(bord).enter().append('tr')
-    .selectAll('td').data((d) => d).enter().append('td')
-    .selectAll('div').data((d) => d).enter().append('div')
+async function LoadData(dataName) {
+    return lastData
+}
 
-borddata.text((d) => d.name)
-borddata.style('transform', (d) => {
-    if (d.side === 'black') {
-        return 'rotateX( 180deg )'
+function CreateBordData(turnNo, phaseColor, bordCondition) {
+    const jsonData = {
+        turnNo: turnNo,
+        phaseColor: phaseColor,
+        bordCondition: bordCondition
     }
-})
-borddata.attr('class', 'piece').attr('draggable', 'true')
-    // TODO:各DIVにfile rank Hierarchie クラスを作成する（D3）
-borddata.attr('Hierarchie', (d) => {
-    return d.Hierarchie
-})
+    return jsonData
+}
 
-borddata.attr('file', (d) => {
-    return d.file
-})
+function RenderBord(bord) {
+    const borddata = d3.select('#bord').append('table').append('tbody').selectAll('tr').data(bord).enter().append('tr')
+        .selectAll('td').data((d) => d).enter().append('td')
+        .selectAll('div').data((d) => d).enter().append('div')
 
-borddata.attr('rank', (d) => {
-    return d.rank
-})
+    borddata.text((d) => d.name)
+
+    borddata.style('transform', (d) => {
+        if (d.side === 'black') {
+            return 'rotateX( 180deg )'
+        }
+    })
+
+    borddata.attr('class', 'piece').attr('draggable', 'true')
+
+    const attrList = ['Hierarchie', 'file', 'rank']
+
+    attrList.forEach(e => {
+        borddata.attr(e, (d) => d[e])
+    })
+}
+
+SetGameList()
 
 const pieces = document.getElementsByClassName('piece')
 
