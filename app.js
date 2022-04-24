@@ -140,6 +140,7 @@ const bord = [
     ]
 ]
 
+// set gamelist to continue-window
 async function SetGameList() {
     const files = await window.manipulateDb.getFileName()
     d3.select('#fileName').selectAll('option').data(files).enter().append('option').attr('value', (d) => {
@@ -149,10 +150,17 @@ async function SetGameList() {
     })
 }
 
-async function LoadData(dataName) {
+async function createNewGame() {
+    const gameName = document.getElementById('newfileName').value
+    await window.manipulateDb.createTable(gameName)
+}
+
+// load game condition from electronDB
+async function LoadBordData(dataName) {
     return lastData
 }
 
+// make current-bord conditon data that forms json
 function CreateBordData(turnNo, phaseColor, bordCondition) {
     const jsonData = {
         turnNo: turnNo,
@@ -162,6 +170,7 @@ function CreateBordData(turnNo, phaseColor, bordCondition) {
     return jsonData
 }
 
+// rendering bord-condition to htmlpage that based on bord-data
 function RenderBord(bord) {
     const borddata = d3.select('#bord').append('table').append('tbody').selectAll('tr').data(bord).enter().append('tr')
         .selectAll('td').data((d) => d).enter().append('td')
@@ -182,23 +191,11 @@ function RenderBord(bord) {
     attrList.forEach(e => {
         borddata.attr(e, (d) => d[e])
     })
+
+    d3.selectAll('td').style('background-color', (d, i) => {
+        return i % 2 ? 'white' : 'gray'
+    })
 }
-
-SetGameList()
-
-const pieces = document.getElementsByClassName('piece')
-
-d3.selectAll('td').style('background-color', (d, i) => {
-    return i % 2 ? 'white' : 'gray'
-})
-
-const button0 = document.getElementById('button0')
-const button1 = document.getElementById('button1')
-const button2 = document.getElementById('button2')
-const button3 = document.getElementById('button3')
-const button4 = document.getElementById('button4')
-const button99 = document.getElementById('button99')
-const button9999 = document.getElementById('button9999')
 
 async function vanish() {
     const _sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
@@ -206,11 +203,6 @@ async function vanish() {
     await _sleep(1000)
     document.getElementById('open').style.display = 'none'
     document.getElementById('container').style.opacity = 1
-}
-
-async function createNewGame() {
-    const gameName = document.getElementById('newfileName').value
-    await window.manipulateDb.createTable(gameName)
 }
 
 async function addDatas() {
@@ -258,6 +250,17 @@ function changeHierarchieFull() {
     button4.style.opacity = '100%'
     d3.selectAll('.piece').style('display', 'block')
 }
+
+SetGameList()
+
+const pieces = document.getElementsByClassName('piece')
+const button0 = document.getElementById('button0')
+const button1 = document.getElementById('button1')
+const button2 = document.getElementById('button2')
+const button3 = document.getElementById('button3')
+const button4 = document.getElementById('button4')
+const button99 = document.getElementById('button99')
+const button9999 = document.getElementById('button9999')
 
 button0.addEventListener('click', vanish, false)
 button1.addEventListener('click', changeHierarchieHight, false)

@@ -1,7 +1,551 @@
 {
-    "test": [{
-        "name": "Alexius Academia",
-        "address": "Paco, Botolan, Zambales",
-        "id": 1650639220491
-    }]
+  "test": [
+    {
+      "name": "Alexius Academia",
+      "address": "Paco, Botolan, Zambales",
+      "id": 1650639220491
+    },
+    [
+      [
+        [
+          {
+            "name": "砲",
+            "side": "black"
+          },
+          {
+            "name": "忍",
+            "side": "black"
+          },
+          {
+            "name": "馬",
+            "side": "black"
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "black"
+          },
+          {
+            "name": "忍",
+            "side": "black"
+          },
+          {
+            "name": "馬",
+            "side": "black"
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "black"
+          },
+          {
+            "name": "忍",
+            "side": "black"
+          },
+          {
+            "name": "馬",
+            "side": "black"
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "black"
+          },
+          {
+            "name": "忍",
+            "side": "black"
+          },
+          {
+            "name": "馬",
+            "side": "black"
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "black"
+          },
+          {
+            "name": "忍",
+            "side": "black"
+          },
+          {
+            "name": "馬",
+            "side": "black"
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "name": "砲",
+            "side": "black",
+            "file": 1,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "black",
+            "file": 1,
+            "rank": 5,
+            "Hierarchie": 2
+          },
+          {
+            "name": "馬",
+            "side": "black",
+            "file": 1,
+            "rank": 5,
+            "Hierarchie": 3
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 2
+          },
+          {
+            "name": "馬",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 3
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "馬",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "馬",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "馬",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "",
+            "side": "black",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "name": "砲",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "馬",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "馬",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "馬",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "馬",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "馬",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "name": "砲",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "馬",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "馬",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "馬",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "馬",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ],
+        [
+          {
+            "name": "砲",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "忍",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          },
+          {
+            "name": "馬",
+            "side": "white",
+            "file": 2,
+            "rank": 5,
+            "Hierarchie": 1
+          }
+        ]
+      ]
+    ]
+  ]
 }
