@@ -140,6 +140,18 @@ const bord = [
     ]
 ]
 
+function CreateBordData(gameName, turnNo, phaseColor, bordDeployment) {
+    const jsonData = {
+        gameName: gameName,
+        bordCondition: {
+            turnNo: turnNo,
+            phaseColor: phaseColor,
+            bordDeployment: bordDeployment
+        }
+    }
+    return jsonData
+}
+
 // set gamelist to continue-window
 async function SetGameList() {
     const files = await window.manipulateDb.getFileName()
@@ -150,9 +162,12 @@ async function SetGameList() {
     })
 }
 
-async function createNewGame() {
+async function CreateNewGame() {
     const gameName = document.getElementById('newfileName').value
     await window.manipulateDb.createTable(gameName)
+    const bordData = CreateBordData(gameName, 0, 'white', bord)
+    const bordCondition = await window.manipulateDb.addData(bordData)
+    console.log(bordCondition)
 }
 
 // load game condition from electronDB
@@ -161,14 +176,6 @@ async function LoadBordData(dataName) {
 }
 
 // make current-bord conditon data that forms json
-function CreateBordData(turnNo, phaseColor, bordCondition) {
-    const jsonData = {
-        turnNo: turnNo,
-        phaseColor: phaseColor,
-        bordCondition: bordCondition
-    }
-    return jsonData
-}
 
 // rendering bord-condition to htmlpage that based on bord-data
 function RenderBord(bord) {
@@ -267,7 +274,7 @@ button1.addEventListener('click', changeHierarchieHight, false)
 button2.addEventListener('click', changeHierarchieMiddle, false)
 button3.addEventListener('click', changeHierarchieLow, false)
 button4.addEventListener('click', changeHierarchieFull, false)
-button99.addEventListener('click', createNewGame, false)
+button99.addEventListener('click', CreateNewGame, false)
 button9999.addEventListener('click', addDatas, false)
 
 function onDragstart(e) {

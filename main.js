@@ -42,14 +42,14 @@ const createWindow = () => {
     })
 
     ipcMain.handle('add-data', async(_e, _arg) => {
-        const obj = new Object()
+        let returnMsg
+        console.log()
         const location = path.join(__dirname, '')
-        obj.name = 'Alexius Academia'
-        obj.address = 'Paco, Botolan, Zambales'
-        db.insertTableContent('test', location, _arg, (succ, msg) => {
-            console.log(succ)
-            console.log(msg)
+        db.insertTableContent(_arg.gameName, location, _arg.bordCondition, (succ, msg) => {
+            returnMsg = msg
         })
+
+        return returnMsg
     })
 
     ipcMain.handle('search-data', async(_e, _arg) => {
