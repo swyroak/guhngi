@@ -13,21 +13,22 @@ require('electron-reload')(__dirname, {
 
 const createWindow = () => {
     const mainWindow = new BrowserWindow({
-        width: 800,
+        width: 1000,
         height: 600,
         title: 'マイアプリ',
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
-
         }
     })
 
+    // get savefilename
     ipcMain.handle('get-filename', async(_e, _arg) => {
         return fs.readdirSync('./save').filter((file) => {
             return file.match(/.json/)
         })
     })
 
+    // create table when new game started
     ipcMain.handle('create-table', async(_e, _arg) => {
         const location = path.join(__dirname, '')
         let ansmsg
@@ -41,6 +42,7 @@ const createWindow = () => {
         return ansmsg
     })
 
+    // add bord data to current game table
     ipcMain.handle('add-data', async(_e, _arg) => {
         let returnMsg
         console.log()
