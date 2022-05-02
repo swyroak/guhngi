@@ -30,11 +30,22 @@ const createWindow = () => {
 
     // create table when new game started
     ipcMain.handle('create-table', async(_e, _arg) => {
-        const location = path.join(__dirname, '')
+        const location = path.join(app.getPath('documents'), 'gungi_save')
+
+        fs.access(location, fs.constants.F_OK, (err) => {
+            console.log(err)
+            fs.mkdir(location, (err) => {
+                console.log(err)
+            })
+        })
+
         let ansmsg
+
+        console.log('call createtable')
+
         db.createTable(_arg, location, (succ, msg) => {
             if (succ) {
-                ansmsg = msg
+                ansmsg = 'Aaaa' + msg
             } else {
                 ansmsg = 'An error has occured. ' + msg
             }
@@ -45,8 +56,7 @@ const createWindow = () => {
     // add bord data to current game table
     ipcMain.handle('add-data', async(_e, _arg) => {
         let returnMsg
-        console.log()
-        const location = path.join(__dirname, '')
+        const location = path.join(app.getPath('documents'), 'gungi_save')
         db.insertTableContent(_arg.gameName, location, _arg.bordCondition, (succ, msg) => {
             returnMsg = msg
         })
