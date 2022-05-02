@@ -28,6 +28,14 @@ const createWindow = () => {
         })
     })
 
+    ipcMain.handle('get-field', async(_e, _arg) => {
+        return db.getField('', location, key, (succ, data) => {
+            if (succ) {
+                return data
+            }
+        })
+    })
+
     // create table when new game started
     ipcMain.handle('create-table', async(_e, _arg) => {
         const location = path.join(app.getPath('documents'), 'gungi_save')
@@ -65,7 +73,7 @@ const createWindow = () => {
     })
 
     ipcMain.handle('search-data', async(_e, _arg) => {
-        const location = path.join(__dirname, '')
+        const location = path.join(app.getPath('documents'), 'gungi_save')
         db.getRows('test', location, _arg, (succ, msg) => {
             console.log(succ)
             console.loglog(msg)
